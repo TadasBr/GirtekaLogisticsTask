@@ -1,0 +1,103 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "ElectricityDataAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Electricity": {
+      "get": {
+        "tags": [
+          "Electricity"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "count",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "query",
+            "name": "pageNumber",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ElectricityReport"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ElectricityReport": {
+      "type": "object",
+      "properties": {
+        "consumedElectricity": {
+          "format": "float",
+          "type": "number"
+        },
+        "generatedElectricity": {
+          "format": "float",
+          "type": "number"
+        },
+        "time": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "realEstateObjectNumber": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "realEstate": {
+          "$ref": "#/definitions/RealEstate"
+        }
+      }
+    },
+    "HouseType": {
+      "format": "int32",
+      "enum": [
+        0,
+        1
+      ],
+      "type": "integer"
+    },
+    "ObjectType": {
+      "format": "int32",
+      "enum": [
+        0,
+        1,
+        2
+      ],
+      "type": "integer"
+    },
+    "RealEstate": {
+      "type": "object",
+      "properties": {
+        "region": {
+          "type": "string"
+        },
+        "houseType": {
+          "$ref": "#/definitions/HouseType"
+        },
+        "objectType": {
+          "$ref": "#/definitions/ObjectType"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "iQ/l0XZeANxKMr1L9VDLJjJfHTMx6Esto9wgRzhX+KU=",
+  "Source": "ElectricityDataAPI",
+  "BasePath": "_content/ElectricityDataAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

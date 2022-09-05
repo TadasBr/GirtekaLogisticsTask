@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAC2Df2DdYwECjxvbI0qHY1gAAAAACAAAAAAAQZgAAAAEAACAAAAA8xwCJKQj7Rm5wzVI7dC9eNHXL5Gh4LgxSmVj1CFv1cwAAAAAOgAAAAAIAACAAAABMn9TY0f2dws+VO24JXmAODR5McDpMlWHEDlpnK3G2oYAAAAAIMIGsRHyhA6ffdg/l6VTCLZMw9nUcozWy0vyUyaLwmEj0ylyllaCHwabPu2xzQrXmM4RJvxLu+qqicIiFZVEg8ywhpvNza9elKiwePcONBMNu+kyjSBXeMfjurIFng96rrPgAoFXvANMuD77Nd3zH2nYwrxGbA0X7ZxobemvLVkAAAAD6SvYA9O6ZDbmC0sr+qqODcEiaiz2ntYEw+wpI1Of+1K7g5NrFeFGsd/F2IwCbpXDpxiDTxl6M/TBIy+w9NdCb</EncryptedPassword>
+    <History>True|2022-09-04T15:24:00.3738202Z;True|2022-09-04T18:05:25.3916595+03:00;True|2022-09-04T17:03:55.7916563+03:00;True|2022-09-04T16:51:40.5581997+03:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="SqlServer">
+      <Value>Data Source=tadasserver.database.windows.net%3bInitial Catalog=ElectricityReports%3bPersist Security Info=True%3bUser ID=tadbra2%3bPassword=Liurka123!</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
